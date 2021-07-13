@@ -29,7 +29,7 @@ var app = new function() {
         if (filteredCount) {
             for (let i=0; i<filteredCount.length; i++){
                 pulp += '<div class="card" style="width: 18rem;">'
-                pulp += '<a href="details.html"><img src="'+filteredCount[i].flag+'" class="card-img-top" alt="..."></img></a>'
+                pulp += '<a href="details.html?code='+filteredCount[i].alpha3Code+'"><img src="'+filteredCount[i].flag+'" class="card-img-top" alt="..."></img></a>'
                 pulp += '<div class="card-body"><h3>'+filteredCount[i].name+'</h3>'
                 pulp += '<p class="card-text">Population:'+filteredCount[i].population+'</p>'
                 pulp += '<p class="card-text">Region:'+filteredCount[i].region+'</p>'

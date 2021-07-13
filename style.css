@@ -30,7 +30,6 @@ nav p {
     background-color: var(--primary-color-b);
     padding: 30px;
     height: 100%;
-
 }
 
 #head {
@@ -94,7 +93,7 @@ select::-ms-expand {
 
 #container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 50px;
 }
 
@@ -116,4 +115,32 @@ button {
 #container-detail {
     display: flex;
     padding: 50px;
+    justify-content: stretch;
+    color: var(--sec-color);
+}
+
+img {
+    max-width: 30vw;
+}
+
+#details {
+    margin: 20px 0px 20px 30px;
+    padding: 10px 0px 10px 40px;
+    max-width: 100%;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+#border {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: var(--sec-color);
 }
